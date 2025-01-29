@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shory</title>
+
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <div class="h-full overflow-hidden group relative w-full max-h-full overflow-hidden flex flex-col">
+        <div class="min-w-full h-full flex-auto max-h-full flex flex-col scrollbar-hide overflow-auto">
+            <div class="flex flex-col flex-auto">
+                <div class="fixed z-layoutSticky w-full translate-x-0">
+                    <header class="flex justify-center px-4 lg:px-16 md:px-6 border-b border-b-gray-200 bg-white">
+                        <div class="w-full">
+                            <div class="relative py-5 flex justify-between">
+                                <div class="flex flex-1  gap-4"><img class="cursor-pointer" src="images/logo.svg"
+                                        alt="Shory logo" style="height: 30px; width: 97px;"></div>
+                                <div class="flex items-center gap-4">
+                                    <div class="flex items-center justify-center gap-6 text-body">
+                                        <div class="">
+                                            <div
+                                                class="flex items-center gap-2 hover:cursor-pointer hover:text-brand-600">
+                                                <span class="text-body">Insurance</span><svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                                    fill="none" viewBox="0 0 12 8" class="w-3 h-2 ">
+                                                    <path fill="currentColor"
+                                                        d="M6.003 7.21a.826.826 0 0 0 .61-.27l5.159-5.284A.75.75 0 0 0 12 1.11a.78.78 0 0 0-.782-.792.803.803 0 0 0-.568.237L5.672 5.662h.662L1.351.555A.796.796 0 0 0 .782.318.779.779 0 0 0 0 1.11c0 .213.081.396.227.551l5.16 5.28c.183.182.382.27.616.27Z">
+                                                    </path>
+                                                </svg></div>
+                                        </div>
+                                        <div class="">
+                                            <div
+                                                class="flex items-center gap-2 hover:cursor-pointer hover:text-brand-600">
+                                                <span class="text-body">Company</span><svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                                    fill="none" viewBox="0 0 12 8" class="w-3 h-2 ">
+                                                    <path fill="currentColor"
+                                                        d="M6.003 7.21a.826.826 0 0 0 .61-.27l5.159-5.284A.75.75 0 0 0 12 1.11a.78.78 0 0 0-.782-.792.803.803 0 0 0-.568.237L5.672 5.662h.662L1.351.555A.796.796 0 0 0 .782.318.779.779 0 0 0 0 1.11c0 .213.081.396.227.551l5.16 5.28c.183.182.382.27.616.27Z">
+                                                    </path>
+                                                </svg></div>
+                                        </div>
+                                        <div class="">
+                                            <div
+                                                class="flex items-center gap-2 hover:cursor-pointer hover:text-brand-600">
+                                                <span class="text-body">Support</span><svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                                    fill="none" viewBox="0 0 12 8" class="w-3 h-2 ">
+                                                    <path fill="currentColor"
+                                                        d="M6.003 7.21a.826.826 0 0 0 .61-.27l5.159-5.284A.75.75 0 0 0 12 1.11a.78.78 0 0 0-.782-.792.803.803 0 0 0-.568.237L5.672 5.662h.662L1.351.555A.796.796 0 0 0 .782.318.779.779 0 0 0 0 1.11c0 .213.081.396.227.551l5.16 5.28c.183.182.382.27.616.27Z">
+                                                    </path>
+                                                </svg></div>
+                                        </div>
+                                        <div class="hover:text-brand-600">Login</div>
+                                    </div>
+                                    <div class="hidden md:block">
+                                        <div class="flex text-paragraph px-1 gap-0.5"><a
+                                                class="text-gray-600 cursor-default">EN</a><span>/</span><a
+                                                class="cursor-pointer">عربي</a></div>
+                                    </div><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none"
+                                        viewBox="0 0 20 20" class="h-6 w-6 py-0.5 cursor-pointer">
+                                        <path fill="currentColor"
+                                            d="M16.75 1H3.25C2.01 1 1 2.01 1 3.25v10.125c0 1.24 1.01 2.25 2.25 2.25h1.125v2.813a.562.562 0 0 0 .923.431l3.893-3.244h7.559c1.24 0 2.25-1.01 2.25-2.25V3.25C19 2.01 17.99 1 16.75 1Zm1.125 12.375c0 .62-.505 1.125-1.125 1.125H8.988a.562.562 0 0 0-.36.13L5.5 17.238v-2.174a.563.563 0 0 0-.563-.563H3.25c-.62 0-1.125-.505-1.125-1.125V3.25c0-.62.505-1.125 1.125-1.125h13.5c.62 0 1.125.505 1.125 1.125v10.125Z">
+                                        </path>
+                                    </svg>
+                                    <div>
+                                        <div class="flex gap-4 flex-graw">
+                                            <div class="cursor-pointer hidden lg:block">
+                                                <div class=""></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+                </div>
+                <div style="margin-top: 71px;"></div>
+                <div
+                    class="flex w-full flex-wrap border-b border-b-gray-200 px-6 lg:px-16 py-4 items-center bg-gray-50 justify-between gap-x-4 gap-y-4 ">
+                    <h1 class="text-h1 font-bold hidden md:block">Quota Details</h1>
+                </div>
+                <div class="flex md:hidden mt-8 items-center px-4">
+                    <h1 class="text-h1 font-bold flex-1 text-center">Quota Details</h1>
+                </div>
+                <div class="mx-auto flex-1 py-8
+								  px-4 lg:px-16 md:px-6 w-full 
+									">
+                    <section class="lg:w-200 mx-auto flex flex-col h-full lg:h-auto">
+                        <div class="mb-8">
+                            <ul class="flex justify-between w-full">
+                                <li class="relative flex flex-col items-center justify-center gap-2">
+                                    <p
+                                        class="whitespace-nowrap text-caption2 md:text-paragraph font-medium   nj-text-brand">
+                                        Quota</p>
+                                    <div class="flex w-full items-center">
+                                        <div class="h-0.5 flex-1"></div>
+                                        <div
+                                            class="relative flex h-5 w-5 items-center justify-center rounded-full border-4 bg-white nj-border-brand">
+                                        </div>
+                                        <div class="h-0.5 flex-1 bg-gray-200"></div>
+                                    </div>
+                                </li>
+                                <div class="mb-[9px] h-0.5 flex-1 self-end bg-gray-200"></div>
+                                <li class="relative flex flex-col items-center justify-center gap-2">
+                                    <p
+                                        class="whitespace-nowrap text-caption2 md:text-paragraph font-medium   text-gray-600">
+                                        Summary</p>
+                                    <div class="flex w-full items-center">
+                                        <div class="h-0.5 flex-1 bg-gray-200"></div>
+                                        <div
+                                            class="relative flex h-5 w-5 items-center justify-center rounded-full border-4 bg-white border-gray-200">
+                                        </div>
+                                        <div class="h-0.5 flex-1 bg-gray-200"></div>
+                                    </div>
+                                </li>
+                                <div class="mb-[9px] h-0.5 flex-1 self-end bg-gray-200"></div>
+                                <li class="relative flex flex-col items-center justify-center gap-2">
+                                    <p
+                                        class="whitespace-nowrap text-caption2 md:text-paragraph font-medium   text-gray-600">
+                                        Payment</p>
+                                    <div class="flex w-full items-center">
+                                        <div class="h-0.5 flex-1 bg-gray-200"></div>
+                                        <div
+                                            class="relative flex h-5 w-5 items-center justify-center rounded-full border-4 bg-white border-gray-200">
+                                        </div>
+                                        <div class="h-0.5 flex-1"></div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="flex flex-col gap-10 md:grid hidden grid-cols-2 gap-5">
+                            <div class="flex flex-row"><img alt="no image" loading="lazy" width="72" height="81"
+                                    decoding="async" data-nimg="1" class="w-16 h-20 me-6"
+                                    src="images/about-visit-visa.73bf1a43.svg"
+                                    style="color: transparent;">
+                                <div>
+                                    <div class="pb-2 font-bold text-title">Visit Visa Insurance</div>
+                                    <div class="text-gray-600 font-normal text-caption1">
+                                        <p>Get visit visa insurance quotas in bulk to provide your customers with a fast
+                                            and effortless application process.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex flex-row"><img alt="no image" loading="lazy" width="71" height="72"
+                                    decoding="async" data-nimg="1" class="w-16 h-20 me-6"
+                                    src="images/shory-wallet.fb9a0e86.svg"
+                                    style="color: transparent;">
+                                <div>
+                                    <div class="pb-2 font-bold text-title">Shory Wallet</div>
+                                    <div class="text-gray-600 font-normal text-caption1">
+                                        <p>Use any UAE local bank to top up your Shory wallet. Once you have funds in
+                                            your wallet, you can easily purchase visit visa quotas on our platform and
+                                            keep track of your payment history free-and-easy. This is an easy payment
+                                            option if you do not wish to use a card for your purchase.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border-t border-t-gray-200 my-6"></div>
+                        <div class="flex md:flex-row flex-col gap-5">
+                            <div class="h-fit w-full">
+                                <div class="w-full flex-1 font-bold text-grey-70 text-small mb-6">Agency Details</div>
+                                <div class="grid w-full gap-5"
+                                    style="grid-template-columns: repeat(1, minmax(0px, 1fr));">
+                                    <div class="flex-1 w-full" data-nj-form=":r0:" data-nj-errors="true">
+                                        <div class="mb-1.5"><label
+                                                class="flex items-start gap-2 text-start text-caption1 text-black font-medium"><span>Agency
+                                                    Name</span></label></div>
+                                        <div class="relative text-black text-body">
+                                            <div class="flex items-center font-normal leading-none  "
+                                                dir="ltr"><input id=":r5:1738176020327" autocomplete="none"
+                                                    maxlength="300" placeholder="Agency Name"
+                                                    class="placeholder:rtl:text-right w-full rounded-md w-full rounded-md border border-gray-500 placeholder:text-gray-500 placeholder:! border-2  px-4 py-2.5 h-10"
+                                                    dir="ltr" type="text"></div>
+                                        </div>
+                                        <div class="flex gap-5 w-full justify-between">
+                                            <div class="pt-1.5">
+                                                <div class="font-medium  text-caption1">Please enter valid
+                                                    name</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex-1 w-full" data-nj-form=":r0:" data-nj-errors="true">
+                                        <div class="mb-1.5"><label
+                                                class="flex items-start gap-2 text-start text-caption1 text-black font-medium"><span>Establishment
+                                                    Card Number</span>
+                                                <div class="inline-block overflow-hidden shrink-0">
+                                                    <div><svg xmlns="http://www.w3.org/2000/svg" width="1em"
+                                                            height="1em" fill="none" viewBox="0 0 15 16"
+                                                            class="text-body text-gray-600 hover:text-black">
+                                                            <path fill="currentColor"
+                                                                d="M7.5 15.496c4.103 0 7.5-3.404 7.5-7.5 0-4.103-3.404-7.5-7.507-7.5C3.397.496 0 3.893 0 7.996c0 4.096 3.404 7.5 7.5 7.5Zm0-1.25a6.22 6.22 0 0 1-6.243-6.25c0-3.47 2.765-6.25 6.236-6.25 3.47 0 6.257 2.78 6.257 6.25s-2.78 6.25-6.25 6.25Zm-1.287-2.132h2.993a.518.518 0 1 0 0-1.037h-.912V7.334c0-.397-.198-.661-.573-.661H6.338a.518.518 0 1 0 0 1.037h.787v3.367h-.912a.518.518 0 1 0 0 1.037Zm1.22-6.662a.951.951 0 0 0 .957-.963.956.956 0 1 0-1.912 0c0 .537.426.963.956.963Z">
+                                                            </path>
+                                                        </svg></div>
+                                                </div>
+                                            </label></div>
+                                        <div class="relative text-black text-body">
+                                            <div class="flex items-center font-normal leading-none  "
+                                                dir="ltr"><input id=":r7:1738176020327" autocomplete="none"
+                                                    placeholder="Establishment Card Number"
+                                                    class="placeholder:rtl:text-right w-full rounded-md w-full rounded-md border border-gray-500 placeholder:text-gray-500 placeholder:! border-2  px-4 py-2.5 h-10"
+                                                    dir="ltr" type="text"></div>
+                                        </div>
+                                        <div class="flex gap-5 w-full justify-between">
+                                            <div class="pt-1.5">
+                                                <div class="font-medium  text-caption1">Please enter the
+                                                    establishment card number</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="w-full flex-1">
+                                        <div class="flex-1 w-full" data-nj-form=":r0:" data-nj-errors="true">
+                                            <div class="mb-1.5"><label
+                                                    class="flex items-start gap-2 text-start text-caption1 text-black font-medium"><span>Department</span></label>
+                                            </div>
+                                            <div class="flex-1 w-full">
+                                                <div class="relative text-black text-body">
+                                                    <div class="flex items-center font-normal leading-none  "
+                                                        dir="ltr"><input id=":r9:1738176020332" autocomplete="none"
+                                                            placeholder="Department" readonly=""
+                                                            class="placeholder:rtl:text-right w-full rounded-md w-full rounded-md border border-gray-500 placeholder:text-gray-500 placeholder:! border-2  px-4 py-2.5 h-10"
+                                                            dir="ltr" type="text" style="padding-inline-end: 42px;">
+                                                        <div
+                                                            class="absolute flex items-center px-3 gap-2.5 ps-2.5 end-0 pe-4">
+                                                            <span class="block cursor-pointer"><svg
+                                                                    xmlns="http://www.w3.org/2000/svg" width="1em"
+                                                                    height="1em" fill="none" viewBox="0 0 12 8"
+                                                                    class="transition-transform">
+                                                                    <path fill="currentColor"
+                                                                        d="M6.003 7.21a.826.826 0 0 0 .61-.27l5.159-5.284A.75.75 0 0 0 12 1.11a.78.78 0 0 0-.782-.792.803.803 0 0 0-.568.237L5.672 5.662h.662L1.351.555A.796.796 0 0 0 .782.318.779.779 0 0 0 0 1.11c0 .213.081.396.227.551l5.16 5.28c.183.182.382.27.616.27Z">
+                                                                    </path>
+                                                                </svg></span></div>
+                                                    </div>
+                                                </div>
+                                                <div class="flex gap-5 w-full justify-between">
+                                                    <div class="pt-1.5">
+                                                        <div class="font-medium  text-caption1">Please
+                                                            select the department</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="h-fit w-full">
+                                <div class="w-full flex-1 font-bold text-grey-70 text-small mb-6">Quota Details</div>
+                                <div class="grid w-full gap-5"
+                                    style="grid-template-columns: repeat(1, minmax(0px, 1fr));">
+                                    <div class="flex-1 w-full" data-nj-form=":r0:" data-nj-errors="true">
+                                        <div class="mb-1.5"><label
+                                                class="flex items-start gap-2 text-start text-caption1 text-black font-medium"><span>Member
+                                                    Count (Minimum of 100)</span></label></div>
+                                        <div class="relative text-black text-body">
+                                            <div class="flex items-center font-normal leading-none  "
+                                                dir="ltr"><input id=":ra:1738176020327" autocomplete="none"
+                                                    maxlength="6" placeholder="Member Count"
+                                                    class="placeholder:rtl:text-right w-full rounded-md w-full rounded-md border border-gray-500 placeholder:text-gray-500 placeholder:! border-2  px-4 py-2.5 h-10"
+                                                    dir="ltr" type="tel"></div>
+                                        </div>
+                                        <div class="flex gap-5 w-full justify-between">
+                                            <div class="pt-1.5">
+                                                <div class="font-medium  text-caption1">Please enter the
+                                                    member count</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="w-full flex-1">
+                                        <div class="flex-1 w-full" data-nj-form=":r0:" data-nj-errors="true">
+                                            <div class="mb-1.5"><label
+                                                    class="flex items-start gap-2 text-start text-caption1 text-black font-medium"><span>Visa
+                                                        Type</span></label></div>
+                                            <div class="flex-1 w-full">
+                                                <div class="relative text-black text-body">
+                                                    <div class="flex items-center font-normal leading-none  "
+                                                        dir="ltr"><input id=":rc:1738176020332" autocomplete="none"
+                                                            placeholder="Visa Type" readonly=""
+                                                            class="placeholder:rtl:text-right w-full rounded-md w-full rounded-md border border-gray-500 placeholder:text-gray-500 placeholder:! border-2  px-4 py-2.5 h-10"
+                                                            dir="ltr" type="text" style="padding-inline-end: 42px;">
+                                                        <div
+                                                            class="absolute flex items-center px-3 gap-2.5 ps-2.5 end-0 pe-4">
+                                                            <span class="block cursor-pointer"><svg
+                                                                    xmlns="http://www.w3.org/2000/svg" width="1em"
+                                                                    height="1em" fill="none" viewBox="0 0 12 8"
+                                                                    class="transition-transform">
+                                                                    <path fill="currentColor"
+                                                                        d="M6.003 7.21a.826.826 0 0 0 .61-.27l5.159-5.284A.75.75 0 0 0 12 1.11a.78.78 0 0 0-.782-.792.803.803 0 0 0-.568.237L5.672 5.662h.662L1.351.555A.796.796 0 0 0 .782.318.779.779 0 0 0 0 1.11c0 .213.081.396.227.551l5.16 5.28c.183.182.382.27.616.27Z">
+                                                                    </path>
+                                                                </svg></span></div>
+                                                    </div>
+                                                </div>
+                                                <div class="flex gap-5 w-full justify-between">
+                                                    <div class="pt-1.5">
+                                                        <div class="font-medium  text-caption1">Please
+                                                            select a valid visa type</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <section
+                            class="h-full flex flex-col justify-start md:justify-end w-full lg:static sticky bottom-0 bg-white lg:pb-0 pb-3 ">
+                            <div class="border-t border-gray-200 mb-6 mt-8"></div>
+                            <div class="flex w-full items-center justify-between"><button
+                                    class="whitespace-nowrap leading-none font-medium flex border items-center cursor-pointer bg-white nj-border-brand nj-text-brand hover:nj-border-brand-hover hover:nj-text-brand-hover  rounded-md text-body px-4 py-2.5 h-10 hidden md:invisible md:block"
+                                    type="button" role="button"><label
+                                        class="flex w-full items-center justify-center cursor-pointer relative">
+                                        <div
+                                            class="flex relative w-full items-center justify-center cursor-pointer gap-2">
+                                            <div class="undefined text-start">Back</div>
+                                        </div>
+                                    </label></button>
+                                <div class="md:w-auto w-full"><button
+                                        class="whitespace-nowrap leading-none font-medium flex border items-center cursor-pointer border-gray-200 bg-gray-200 text-gray-400 rounded-md text-body px-4 py-2.5 h-10 md:w-auto w-full"
+                                        disabled="" type="button" role="button"><label
+                                            class="flex w-full items-center justify-center cursor-pointer relative">
+                                            <div
+                                                class="flex relative w-full items-center justify-center cursor-pointer gap-2">
+                                                <div class="undefined text-start">Continue</div>
+                                            </div>
+                                        </label></button></div>
+                            </div>
+                        </section>
+                    </section>
+                    <div></div>
+                </div>
+                <div class="w-full ">
+                    <footer class="w-full bg-white border-t border-t-gray-200">
+                        <div
+                            class="mx-auto flex h-24 flex-col justify-center px-4 lg:px-16 md:px-6 h-fit px-4 lg:px-16 md:px-6">
+                            <div
+                                class="flex flex-col gap-10 sm:gap-28 md:gap-60 justify-between text-caption1 text-gray-600 sm:flex-row py-6">
+                                <div class="flex flex-col gap-4 sm:h-full sm:flex-col">
+                                    <div class="flex gap-2.5 text-brand-600 sm:gap-2.5 leading-none"><a
+                                            class="cursor-pointer" target="_blank" rel="noopener"
+                                            href="terms-and-conditions">Terms</a><a class="cursor-pointer"
+                                            target="_blank" rel="noopener" href="privacy-policy">Privacy</a></div>
+                                    <p class="text-gray-600">Shory Insurance Brokers LLC is authorized, regulated and
+                                        licensed broker by the UAE Central Bank with Shory license number 287. Shory©
+                                        all rights reserved 2024.</p>
+                                    <div>
+                                        <p class="text-gray-600">Your secure payment options</p>
+                                        <div class="flex gap-2 align-top mt-2"><img alt="visa" loading="lazy" width="36"
+                                                height="24" decoding="async" data-nimg="1" class="h-6"
+                                                src="images/visa.18986299.svg"
+                                                style="color: transparent;"><img alt="mastercard" loading="lazy"
+                                                width="36" height="24" decoding="async" data-nimg="1" class="h-6"
+                                                src="images/mastercard.6b7450c3.svg"
+                                                style="color: transparent;"><img alt="shoryWallet" loading="lazy"
+                                                width="36" height="24" decoding="async" data-nimg="1" class="h-6"
+                                                src="images/wallet.5c3a85b8.svg"
+                                                style="color: transparent;"></div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex sm:self-center min-w-fit h-full items-center justify-start gap-0.5 sm:justify-between sm:gap-0.5">
+                                    <img alt="footer logo" loading="lazy" width="42" height="50" decoding="async"
+                                        data-nimg="1" class="h-12 w-11"
+                                        src="images/mof_logo.e13a1831.svg"
+                                        style="color: transparent;">
+                                    <p class="text-caption2 leading-tight w-24">Licensed by <br> Central Bank of UAE<br>
+                                        License Number 287</p>
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+        <div class="absolute w-full h-1.5 bottom-1 cursor-pointer  z-layoutScrollTracks" style="display: none;">
+            <div class="opacity-0 transition-opacity group-hover:opacity-100 ease-in-out duration-500 px-2 relative h-full"
+                style="left: 0px; width: 1920px;">
+                <div class="cursor-pointer bg-gray-700 w-full h-full opacity-50 rounded-md"></div>
+            </div>
+        </div>
+        <div class="absolute h-full w-1.5 end-1 top-0 cursor-pointer  z-layoutScrollTracks">
+            <div class="opacity-0 transition-opacity group-hover:opacity-100 ease-in-out duration-500 py-2 relative w-full"
+                style="top: 0px; height: 282.682px;">
+                <div class="cursor-pointer bg-gray-700 w-full h-full opacity-50 rounded-md"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
